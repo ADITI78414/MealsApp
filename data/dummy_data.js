@@ -108,8 +108,8 @@ export const MEALS = [
     'Wiener Schnitzel',
     'luxurious',
     'challenging',
-    'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
-    60,
+    'https://i.pinimg.com/originals/8f/5f/8e/8f5f8ef5d033dd96b3f9e0b4f21724ef.jpg',
+    20,
     [
       '8 Veal Cutlets',
       '4 Eggs',
