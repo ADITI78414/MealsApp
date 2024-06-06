@@ -1,7 +1,7 @@
 import { Image, Text, View, StyleSheet, ScrollView } from "react-native"
 
 import { MEALS } from '../data/dummy_data'
-import MealDetails from "../components/MealDetails"
+import Informacion from "../components/Informacion"
 
 function MealDetailScree({route, navigation}) {
     const mealId = route.params.mealId
@@ -12,14 +12,14 @@ function MealDetailScree({route, navigation}) {
         <ScrollView>
             <Image style={styles.image} source={{ uri: selectedMeal.imageUrl }} />
             <Text style={styles.title}>{selectedMeal.title}</Text>
-            <MealDetails 
+            <Informacion 
                 duration={selectedMeal.duration}
                 complexity={selectedMeal.complexity}
                 affordability={selectedMeal.affordability}
             />
             <View>
-                <Text style={styles.subtitle}>Ingredients</Text>
-                {selectedMeal.ingredients.map(ingredients => <Text style={styles.textContent} key={ingredients}>{ingredients}</Text>)}
+                <Text style={styles.subtitle}>grupos</Text>
+                {selectedMeal.grupos.map(grupos => <Text style={styles.textContent} key={grupos}>{grupos}</Text>)}
                 <Text style={styles.subtitle}>Steps</Text>
                 {selectedMeal.steps.map(step => <Text style={styles.textContent} key={step}>{step}</Text>)}
             </View>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         margin: 4,
         marginVertical: 3,
-        marginHorizontal: 24    
+        marginHorizontal: 24
     }
 
 

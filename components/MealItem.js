@@ -1,6 +1,6 @@
 import { View, Text, Image, Pressable, StyleSheet, Platform } from "react-native"
 import { useNavigation} from '@react-navigation/native'
-import MealDetails from "./MealDetails"
+import Informacion from "./Informacion"
 
 function MealItem({ id, title, imageUrl, duration, complexity, affordability }){
     console.log('title', title)
@@ -29,7 +29,7 @@ function MealItem({ id, title, imageUrl, duration, complexity, affordability }){
                             {title}
                         </Text>
                     </View>
-                    <MealDetails 
+                    <Informacion 
                         duration={duration}
                         complexity={complexity}
                         affordability={affordability}
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: 100
+        height: 200
     },
     title: {
         fontWeight: 'bold',
