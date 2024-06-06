@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         elevation: 4,
         shadowColor: 'black',
         shadowOpacity: 0.25,
-        shadowOffset: { width: 0, height: 2},
+        shadowOffset: { width: '100%', height: 2},
         shadowRadius: 8,
     },
     buttonPressed: {
@@ -60,11 +60,12 @@ const styles = StyleSheet.create({
     },
     innerContainer: {
         borderRadius: 8,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        width:'100%'
     },
     image: {
         width: '100%',
-        height: 200
+        height: 250
     },
     title: {
         fontWeight: 'bold',
